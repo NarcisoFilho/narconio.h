@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="DADOS_MENU"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="cor_comum"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a1fb23156cba5b702c3b13e31e0b56523"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="cor_select"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#ae3d44728b0ec628e8b3171c1a321ab87"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="cor_sub_titulo"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a9fc76a4bf1da2f495254492e8dab2874"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="cor_titulo"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a274673e652b116251a679892e92f2c2f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="items_menu"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a00c34785171c57abbfba8d16fdc89564"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="qtd_items"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a85e1938f0bca5b1ca5e09a7c39a7097f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="sair_loop"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a4ca931807c1de6a402ecc854d536d1cc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="selec"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#aab0c0056c7171ce3c9073e3c09174ff2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="sub_titulo"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a19742388333d1404d011eb5700a09a55"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="tela"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#af43314d786115e4f2663baa497fc7c91"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="titulo"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a1d7e912e227ef3d742b809986bc6cf26"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="titulo_subl"><param name="Local" value="struct_d_a_d_o_s___m_e_n_u.html#a1eedbac6d8f278e9c7e410fe310ba8ee"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="METADADOS_ARQ"><param name="Local" value="struct_m_e_t_a_d_a_d_o_s___a_r_q.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="cols"><param name="Local" value="struct_m_e_t_a_d_a_d_o_s___a_r_q.html#a3a8f4d1b98083df3ea8fe9bb11a741cc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lins"><param name="Local" value="struct_m_e_t_a_d_a_d_o_s___a_r_q.html#a04d73ee394ba29888f39a8000249ec63"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="nome"><param name="Local" value="struct_m_e_t_a_d_a_d_o_s___a_r_q.html#a8eaf1435fb670fcb052acca3ebf4542e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="pasta"><param name="Local" value="struct_m_e_t_a_d_a_d_o_s___a_r_q.html#a370f105b02168fa299eca423bea86c73"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ptrFile"><param name="Local" value="struct_m_e_t_a_d_a_d_o_s___a_r_q.html#a233d25d9126704ad61cc0f2292964d53"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="tipo"><param name="Local" value="struct_m_e_t_a_d_a_d_o_s___a_r_q.html#afdf9782da506f7696d9dcb62c91456d0"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="PONTO"><param name="Local" value="struct_p_o_n_t_o.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="x"><param name="Local" value="struct_p_o_n_t_o.html#a8caed5f4f124c40c34be1c4102c0244a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="y"><param name="Local" value="struct_p_o_n_t_o.html#ae8d3e75bf1b4891f39c00a473b7e52d2"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="RETANG"><param name="Local" value="struct_r_e_t_a_n_g.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="altu"><param name="Local" value="struct_r_e_t_a_n_g.html#a1bd8454cafe9f2db526556c944b4762a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="larg"><param name="Local" value="struct_r_e_t_a_n_g.html#a4de79462a4f98a391d2bc4127ba77878"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ponto"><param name="Local" value="struct_r_e_t_a_n_g.html#a48341be24de2d19ef2863457c9d9be79"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="RETANG_CT"><param name="Local" value="struct_r_e_t_a_n_g___c_t.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="altu"><param name="Local" value="struct_r_e_t_a_n_g___c_t.html#acf523972f8fe151f58d41019036d49a1"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="larg"><param name="Local" value="struct_r_e_t_a_n_g___c_t.html#a77d9dff552e46ea21b3acfd60e9d312b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ponto"><param name="Local" value="struct_r_e_t_a_n_g___c_t.html#a8bf49e8176ac9b0f705fc3a0548fa59b"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Files"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="File List"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="ativar_ansi_windows.h"><param name="Local" value="ativar__ansi__windows_8h_source.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="estruturas_narconio.h"><param name="Local" value="estruturas__narconio_8h_source.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="narconio.h"><param name="Local" value="narconio_8h_source.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="windows_narconio.h"><param name="Local" value="windows__narconio_8h_source.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

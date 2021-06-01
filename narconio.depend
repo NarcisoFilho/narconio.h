@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1622224142 source:c:\users\narci\onedrive\documentos\carcarÁ games\narconio\narconio.c
+	"narconio.h"
+	"narconio_interno.h"
+
+1622224040 c:\users\narci\onedrive\documentos\carcarÁ games\narconio\narconio.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"estruturas_narconio.h"
+	"windows_narconio.h"
+
+1622215325 c:\users\narci\onedrive\documentos\carcarÁ games\narconio\estruturas_narconio.h
+
+1621871884 c:\users\narci\onedrive\documentos\carcarÁ games\narconio\windows_narconio.h
+	<windows.h>
+	<stdio.h>
+
+1622128053 c:\users\narci\onedrive\documentos\carcarÁ games\narconio\narconio_interno.h
+
+1622229876 source:c:\users\narci\onedrive\documentos\carcarÁ games\narconio\teste.c
+	"narconio.h"
+
+1621871967 source:c:\users\narci\onedrive\documentos\carcarÁ games\narconio\windows_narconio.c
+	"windows_narconio.h"
+

@@ -1,0 +1,27 @@
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:53: warning: argument 'void' of command @param is not found in the argument list of finalizarJanela(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:65: warning: documented empty return type of finalizarJanela
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:50: warning: documented empty return type of inicializarJanela
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:107: warning: argument 'void' of command @param is not found in the argument list of limpaBuffer(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:111: warning: documented empty return type of limpaBuffer
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:115: warning: argument 'void' of command @param is not found in the argument list of limpaBuffer_PRO(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:120: warning: documented empty return type of limpaBuffer_PRO
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:88: warning: argument 'void' of command @param is not found in the argument list of pausaE(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:92: warning: documented empty return type of pausaE
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:97: warning: argument 'void' of command @param is not found in the argument list of pausaE_PRO(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:103: warning: documented empty return type of pausaE_PRO
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:70: warning: argument 'int' of command @param is not found in the argument list of pausaMS(int tempoMS)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:74: warning: The following parameter of pausaMS(int tempoMS) is not documented:
+  parameter 'tempoMS'
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:74: warning: documented empty return type of pausaMS
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:79: warning: argument 'int' of command @param is not found in the argument list of pausaS(float tempoS)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:83: warning: The following parameter of pausaS(float tempoS) is not documented:
+  parameter 'tempoS'
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/narconioH_documentac/narconio.h:83: warning: documented empty return type of pausaS
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/windows_narconio.c:40: warning: argument 'void' of command @param is not found in the argument list of ativar_es_ANSI_windows(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/windows_narconio.c:22: warning: documented empty return type of ativar_es_ANSI_windows
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/windows_narconio.c:54: warning: argument 'void' of command @param is not found in the argument list of restaurar_padrao_windows(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/windows_narconio.c:52: warning: documented empty return type of restaurar_padrao_windows
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/windows_narconio.c:40: warning: argument 'void' of command @param is not found in the argument list of ativar_es_ANSI_windows(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/windows_narconio.h:7: warning: documented empty return type of ativar_es_ANSI_windows
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/windows_narconio.c:54: warning: argument 'void' of command @param is not found in the argument list of restaurar_padrao_windows(void)
+C:/Users/narci/OneDrive/Documentos/CARCARÁ GAMES/narconio/windows_narconio.h:8: warning: documented empty return type of restaurar_padrao_windows
