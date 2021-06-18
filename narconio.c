@@ -1,6 +1,5 @@
 
 #include "narconio.h"
-#include "narconio_interno.h"
 
 /// INICIALIZAÇÃO ═══════════════════════════════════════════════════
 
@@ -77,6 +76,23 @@ void pausaMS( int tempoMS ){
 void pausaS( float tempoS ){
         long int tempoInicial = time( NULL );
         while( time( NULL ) < tempoInicial + tempoS );
+}
+//###########################################################
+
+
+
+/** \brief Pausa a execução por alguns segundos ou até usuário apertar alguma tecla
+ *
+ * \param int : O tempo em segundo
+ * \return void
+ *
+ */
+
+void pausaST( float tempoS ){
+        long int tempoInicial = time( NULL );
+        while( time( NULL ) < tempoInicial + tempoS )
+                if( !feof( stdin ) )
+                     return;
 }
 //###########################################################
 
@@ -453,6 +469,8 @@ FONTE carregarFonte( char* nome ){
                         if( fonte_retorno.matriz[ i ][ j ] != ' ' ){
                                 letra = fonte_retorno.matriz[ i ][ j ];
 
+                                if( letra < 0 ) letra += 256;
+
 //                                printf("%c" , letra );                // Ative para testar mapeamento da fonte
                                 fonte_retorno.larg[ letra ] = largura;
 
@@ -486,11 +504,14 @@ FONTE carregarFonte( char* nome ){
 }
 //###########################################################
 
+
+
 /** \brief Saída de texto com fonte personalizada
  *
  * \param char* : Texto
  * \param FONTE : Fonte a ser usada
  * \param PONTO : Ponto de inserção do texto ( Quina Superior Esquerda )
+ * \param int : Espaçamento
  * \param COR : Cor do texto
  * \param COR : Cor do fundo
  * \return void
@@ -518,7 +539,9 @@ void printFonte( char* texto , FONTE fonte , PONTO ponto , int espacamento , COR
                 if( texto[ letra ] != ' ' ){
                         for( i = fonte.y0_letra[ letra_imp ] + 1 ; i < fonte.y0_letra[ letra_imp ] + fonte.altu + 1 ; i++ ){
                                 for( j = fonte.x0_letra[ letra_imp ] ; j <= fonte.xf_letra[ letra_imp ] ; j++ ){
-                                        putcXY( fonte.matriz[ i ][ j ] , ponto.x + xg + x , ponto.y + y );
+                                        if( ponto.x + xg + x > 0 )
+                                                if( ponto.y + y > 0 )
+                                                        putcXY( fonte.matriz[ i ][ j ] , ponto.x + xg + x , ponto.y + y );
                                         x++;
                                 }
                                 y++;
@@ -528,12 +551,11 @@ void printFonte( char* texto , FONTE fonte , PONTO ponto , int espacamento , COR
                         xg += uxg;
                         y = 0;
                 }else{
-                        for( i = fonte.y0_letra[ letra_imp ] + 1 ; i < fonte.y0_letra[ letra_imp ] + fonte.altu + 1 ; i++ ){
+                        for( y = 0 ; y < fonte.altu - 2 ; y++ ){
                                 for( j = 0 ; j < espacamento ; j++ ){
                                         putcXY( ' ' , ponto.x + xg + x , ponto.y + y );
                                         x++;
                                 }
-                                y++;
                                 uxg = x;
                                 x = 0;
                         }
@@ -545,6 +567,41 @@ void printFonte( char* texto , FONTE fonte , PONTO ponto , int espacamento , COR
         }
 
         RESET_PADRAO;
+}
+//###########################################################
+
+
+
+/** \brief Mede Largura do texto com fonte personalizada
+ *
+ * \param char* : Texto
+ * \param FONTE : Fonte a ser usada
+ * \param int : Espaçamento
+ * \return int : Largura do texto na tela em colunas
+ *
+ */
+int strlen_fonte( char* texto , FONTE fonte , int espacamento ){
+        int i , j;      // Contador Interno do Arquivo
+        int letra;      // Contador Interno do String
+        int letra_imp;
+        int largura = 0;
+
+        for( letra = 0 ; letra < strlen( texto ) ; letra++ ){
+
+                if( fonte.caracs_dispon[ texto[ letra ] ] == true )
+                        letra_imp = (int)texto[ letra ];
+                else
+                        letra_imp = (int)'?';
+
+                if( texto[ letra ] != ' ' )
+                        for( j = fonte.x0_letra[ letra_imp ] ; j <= fonte.xf_letra[ letra_imp ] ; j++ )
+                                        largura++;
+                else
+                        for( j = 0 ; j < espacamento ; j++ )
+                                largura++;
+        }
+
+        return largura;
 }
 //###########################################################
 
@@ -638,10 +695,12 @@ void defCorTxt_PRO( COR cor_texto , COR cor_fundo , ESTILO estilo ){
  * \return void
  *
  */
-
 void limpaTela( void ){
         printf("\x1b[2J");
 }
+//###########################################################//###########################################################
+
+
 
 /** \brief Limpa toda a Tela com uma cor
  *
@@ -649,7 +708,6 @@ void limpaTela( void ){
  * \return void
  *
  */
-
 void limpaTela_PRO( COR cor ){
         defCorTxt_PRO( PRETO , cor , PADRAO );
 
@@ -663,6 +721,10 @@ void limpaTela_PRO( COR cor ){
 
         cursorHome();
 }
+//###########################################################//###########################################################
+
+
+
 
 /** \brief Limpa um Linha
  *
@@ -674,6 +736,32 @@ void limpaLinha( int linha ){
         cursorXY( 0 , linha );
         printf("\x1b[2K");
 }
+//###########################################################//###########################################################
+
+
+/** \brief Salva a tela atual
+ *
+ * \param void
+ * \return void
+ *
+ */
+void salvaTela( void ){
+        printf("\x1b[?47h");
+}
+//###########################################################
+
+
+
+/** \brief Restaura a tela para o momento do último salvamento
+ *
+ * \param void
+ * \return void
+ *
+ */
+void carregarTela( void ){
+        printf("\x1b[?47l");
+}
+//###########################################################
 
 
 
@@ -941,7 +1029,7 @@ void desenRetang( int x , int y , int larg , int altu , COR cor ){
         defCorTxtFundo( cor );
         for( int i = 0 ; i < altu ; i++ )
                 for( int j = 0 ; j < larg ; j++ )
-                        putcXY(' ', x + j , y + i );
+                        putcXY( ' ', x + j , y + i );
 
         RESET_PADRAO;
 }

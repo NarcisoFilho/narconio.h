@@ -36,7 +36,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="narconio.h" />
-		<Unit filename="rascunho.h" />
+		<Unit filename="teste.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="windows_narconio.c">
 			<Option compilerVar="CC" />
 		</Unit>

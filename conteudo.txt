@@ -1,0 +1,29 @@
+ O volume na unidade C n∆o tem nome.
+ O N£mero de SÇrie do Volume Ç 76E7-47F0
+
+ Pasta de C:\Users\narci\OneDrive\Documentos\CARCARµ GAMES\narconio
+
+05/06/2021  10:26    <DIR>          .
+05/06/2021  10:26    <DIR>          ..
+23/05/2021  12:09    <DIR>          bin
+05/06/2021  10:15                38 compilaá∆o_comandos.txt
+05/06/2021  10:26                 0 conteudo.txt
+23/05/2021  23:14    <DIR>          doxygen
+28/05/2021  12:22             3.006 estruturas_narconio.h
+28/05/2021  22:27    <DIR>          Fonte
+05/06/2021  10:24            74.524 libnarconio.a
+05/06/2021  10:25                52 montagem_comandos.txt
+05/06/2021  10:21            39.409 narconio.c
+02/06/2021  00:45             1.557 narconio.cbp
+28/05/2021  16:26               866 narconio.depend
+05/06/2021  09:38            13.309 narconio.h
+05/06/2021  09:41        10.168.276 narconio.h.gch
+05/06/2021  10:23            15.129 narconio.o
+26/05/2021  12:29    <DIR>          narconioH_documentac
+23/05/2021  12:09    <DIR>          obj
+05/06/2021  10:19    <DIR>          Testes
+24/05/2021  12:59             1.679 windows_narconio.c
+24/05/2021  12:58               338 windows_narconio.h
+05/06/2021  10:23             1.483 windows_narconio.o
+              14 arquivo(s)     10.319.666 bytes
+               8 pasta(s)   160.275.017.728 bytes dispon°veis

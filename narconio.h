@@ -42,6 +42,7 @@
 ///### CONTROLE DE EXECUÇÃO ════════════════════════════════════
         void pausaMS( int tempoMS );                 // Pausa a execução. Tempo em millisegundos
         void pausaS( float tempoS );                  // Pausa a execução. Tempo em segundos
+        void pausaST( float tempoS );             // Pausa a execução por alguns segundos ou até usuário apertar alguma tecla
         void pausaE( void );                              // Pausa a execução até o usuário pressionar enter
         void pausaE_PRO( void );                     //Pausa a execução até o usuário pressionar enter, com limpeza prévia de buffer e pausa de no mínimo 0,5 s
         void limpaBuffer( void );                        // Limpa o buffer do teclado
@@ -87,6 +88,9 @@
         void limpaTela_PRO( COR cor );                                                    // Limpa toda a Tela com uma cor
         void limpaLinha( int linha );                                                          // Limpa uma linha
 
+        void salvaTela( void );                 // Salva a tela atual
+        void carregarTela( void );            // Restaura a tela para o momento do último salvamento
+
         // CORES
         #define PRETO 0
         #define VERMELHO 1
@@ -112,7 +116,21 @@
         #define AZUL_2 19
         #define AZUL_3 20
         #define AZUL_4 21
+        #define VERDE_AZULADO_ESCURO 23
+        #define VERDE_ESCURO 28
+        #define VERDE_BRILHANTE 46
+        #define VIOLETA_0 57
+        #define VIOLETA_1 56
+        #define VIOLETA_2 55
+        #define VIOLETA_3 54
+        #define VIOLETA_4 53
         #define MAROON 52
+        #define AMARELO_0 195
+        #define AMARELO_1 194
+        #define AMARELO_2 193
+        #define AMARELO_3 192
+        #define AMARELO_4 191
+        #define AMARELO_5 190
         #define ROSA_CHOQUE 200
         #define LARANJA 202
         #define AMARELO_CLARO 190
@@ -173,6 +191,7 @@
         /// FONTES --------------------------------------------------------------------------------------------
         FONTE carregarFonte( char* nome );                                                                                          // Carrega uma Fonte
        void printFonte( char* texto , FONTE fonte , PONTO ponto , int espacamento , COR cor_text , COR cor_fundo );              // Desenha um texto na tela com fonte personalizada
+        int strlen_fonte( char* texto , FONTE fonte , int espacamento );
 
 ///### STRINGS ════════════════════════════════════════════════════════
         int centraTxtXTela( char* texto , RETANG tela );                    // Retorna coordenada de inserção de string para centralização horizontal

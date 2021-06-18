@@ -1,30 +1,32 @@
-/**< TESTE DAS FUNÇÕES */
 #include "narconio.h"
-//#include "ativar_ansi_windows.h"
-//#include "locale.h"
+#include "limits.h"
+
+typedef struct{
+        char nome_jogador[ 15 ];
+        int pontos;
+}HIGHSCORES; /* Registro das pontuações mais altas carregadas de arquivo .bin */
+
 int main(){
-        int espacamento = 3;
-        FONTE fonte[ 10 ];
-        fonte[ 0 ] = carregarFonte("Fonte/Big.txt");
-        fonte[ 1 ] = carregarFonte("Fonte/Small.txt");
-        fonte[ 2 ] = carregarFonte("Fonte/StarWars.txt");
-
-        int qtd_fontes = 3;
-
+//        FONTE fonte = carregarFonte("Fonte/big.txt");
         inicializarJanela();
 
-        int i = 0;
-        for( ; ; ){
-                printFonte("#0177 2 ! @$%" , fonte[ i ] , (PONTO){ 2 , 4 } , espacamento , AZUL , PRETO );
-                printFonte("aBcD TESTE!" , fonte[ i ] , (PONTO){ 2 , 4 + 2 + fonte[ i ].altu } , espacamento , AZUL , PRETO );
-                printFonte("M Narciso F 77" , fonte[ i ] , (PONTO){ 2 , 4 + 4 + 2 * fonte[ i ].altu } , espacamento , AZUL , PRETO );
-                pausaMS( 500 );
-                LMPTELA;
-                i++;
-                if( i == qtd_fontes ) i = 0;
-        }
+        HIGHSCORES highscores[ 15 ][ 5 ];
+        for( int i = 0 ; i <= 14 ; i++ )
+                for( int j = 0 ; j < 5 ; j++ ){
+                        highscores[ i ][ j ].pontos = 0;
+                        strcpy( highscores[ i ][ j ].nome_jogador , "-------\0" );
+                }
 
-        finalizarJanela();
+        FILE* arq = fopen( "highscores.bin" , "wb" );
+        if( arq == NULL ) ErroFatal( FALHA_AUTORIZACAO_ABERTURA_ARQ );
 
+        for( int i = 0 ; i <= 14 ; i++ )
+                for( int j = 0 ; j < 5 ; j++ )
+                        fwrite( &highscores[ i ][ j ] , sizeof( HIGHSCORES ) , 1 , arq );
+
+        fclose( arq );
+
+
+        pausaS( 2 );
         return 0;
 }
